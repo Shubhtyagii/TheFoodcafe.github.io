@@ -710,6 +710,13 @@ background-color: #888;
 
 
 @media screen and (max-width:500px){
+ .bgimg .main-title{
+ font-size:2rem;
+}
+.bgimg p{
+font-size:1rem;}
+
+
 .food-menu{
     display: flex;
     flex-wrap: nowrap;
