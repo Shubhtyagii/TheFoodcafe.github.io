@@ -817,6 +817,7 @@ background-color: #888;
 .food-menu{
     display: flex;
     flex-wrap: nowrap;
+  align-items:center;
     flex-direction: column;
     width: 100%;
     /* border: 1px solid red; */
@@ -824,7 +825,7 @@ background-color: #888;
 .food-menu-img{
 
     /* border: 2px solid red; */
-    text-align: left;
+    text-align: center;
 }
 
 .food-menu-img img{
@@ -832,9 +833,16 @@ background-color: #888;
     height: 225px;
 }
 .food-menu-img img{
-    margin: 2rem 0;
+    margin: 2rem auto;
 
 }
+  
+  
+  .food-menu-content{width: 100%;
+  text-align:center;}
+  
+  
+  
 .testimonial-area .testimonial-title{
     font-size: 2rem;
 }
@@ -849,17 +857,22 @@ background-color: #888;
     height: 250px;
 }
 .contact-form{
-    height: 350px;
+    height: 360px;
     padding: 0rem 1.5rem 0rem 2rem ;
 }
+
+  
+  
+  
 .contact-form input[type="text"],input[type='email'],textarea{
     margin-bottom: 1rem;
 }
 
+ 
+  .contact-form input[type="submit"]{
+  margin-top:0.5rem;}
 
 
-
-.food-menu-content{width: 100%;}
 
 
 
