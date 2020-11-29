@@ -8,34 +8,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
     <title>HOME | The_Food_Cafe</title>
 </head>
 
@@ -48,6 +29,8 @@ $(document).ready(function(){
                 <span class="lines line2"></span>
                 <span class="lines line3"></span>
             </div>
+            <h1 class="logo">food <span style="color: #16a083;">Cafe</span></h1>
+
             <ul class="navbar-iteams">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -57,27 +40,31 @@ $(document).ready(function(){
                 <li><a href="#contact">Contact</a></li>
                 <hr style="background-color: #000;  height: 3px;">
             </ul>
-            <h1 class="logo">food <span  style="color: #16a083;">Cafe</span></h1>
+
         </div>
     </nav>
-   
-     <section class="bgimg" id="home">
-         <div class="bgimg-data">
-         <h1 class="main-title">eat delicious food</h1>
-         <p>eat health food, it good for our health.</p>
-         <a href="#food-menu" class="btn btn-primary">menu</a>
-         </div>
-     </section>
-   
+
+    <section class="bgimg" id="home">
+        <div class="bgimg-data">
+            <h1 class="main-title">eat delicious food</h1>
+            <p>eat health food, it good for our health.</p>
+            <a href="#food-menu" class="btn btn-primary">menu</a>
+        </div>
+    </section>
+
 
     <section class="about-area" id="about">
         <div class="about-container container">
-            <div class="about-text">
-             <p class="small">About Us</p>
-             <h2>We've making healthy food for last 10 years.</h2>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut ipsa reprehenderit maxime quibusdam eius, doloremque ut culpa id distinctio ducimus blanditiis facere corrupti in rerum dolores repudiandae magni veniam consequuntur, temporibus accusamus delectus iusto, nam molestias magnam! Magnam, aspernatur necessitatibus.</p>                
+            <div class="about-text  " id="about-area-left">
+                <p class="small">About Us</p>
+                <h2>We've making healthy food for last 10 years.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut ipsa reprehenderit maxime quibusdam
+                    eius, doloremque ut culpa id distinctio ducimus blanditiis facere corrupti in rerum dolores
+                    repudiandae magni veniam consequuntur, temporibus accusamus delectus iusto, nam molestias magnam!
+                    Magnam, aspernatur necessitatibus.</p>
             </div>
-            <div class="about-img">
+
+            <div class="about-img" id="about-area-right">
                 <img src="./img/about-photo.jpg" alt="">
             </div>
         </div>
@@ -91,7 +78,8 @@ $(document).ready(function(){
                     <img src="./img/food1.jpg" alt="">
                     <div class="food-img-contents">
                         <h3>Fruits</h3>
-                        <a href="https:\\en.wikipedia.org/wiki/Fruits" class="btn btn-primary" target="_blank">Learn More</a>
+                        <a href="https:\\en.wikipedia.org/wiki/Fruits" class="btn btn-primary" target="_blank">Learn
+                            More</a>
                     </div>
                 </div>
             </div>
@@ -101,7 +89,8 @@ $(document).ready(function(){
                     <img src="./img/food2.jpg" alt="">
                     <div class="food-img-contents">
                         <h3>Vegetables</h3>
-                        <a href="https:\\en.wikipedia.org/wiki/Vegetables" class="btn btn-primary" target="_blank">Learn More</a>
+                        <a href="https:\\en.wikipedia.org/wiki/Vegetables" class="btn btn-primary" target="_blank">Learn
+                            More</a>
                     </div>
                 </div>
             </div>
@@ -111,7 +100,8 @@ $(document).ready(function(){
                     <img src="./img/food3.jpg" alt="">
                     <div class="food-img-contents">
                         <h3>Grains</h3>
-                        <a href="https:\\en.wikipedia.org/wiki/Grains" class="btn btn-primary" target="_blank">Learn More</a>
+                        <a href="https:\\en.wikipedia.org/wiki/Grains" class="btn btn-primary" target="_blank">Learn
+                            More</a>
                     </div>
                 </div>
             </div>
@@ -123,147 +113,150 @@ $(document).ready(function(){
 
     <!-- ################## food-menu <section>########################## -->
 
-        <section class="food-menu-area" id="food-menu">
-            <h2 class="food-menu-title">food menu</h2>
-            <div class="food-menu-container container">
+    <section class="food-menu-area" id="food-menu">
+        <h2 class="food-menu-title">food menu</h2>
+        <div class="food-menu-container container">
 
-                <div class="food-menu menu-right">
-                    <div class="food-menu-img">
-                        <img src="./img/food-menu1.jpg" alt="food image">
-                    </div>
-                    <div class="food-menu-content">
-                        <h2>food menu item 1</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, cupiditate.</p>
-                        <p class="food-price">price: &#8377 250.00/-</p>
-                    </div>
+            <div class="food-menu menu-right">
+                <div class="food-menu-img" id="pakwan-1">
+                    <img src="./img/food-menu1.jpg" alt="food image">
                 </div>
-
-                <div class="food-menu menu-left">
-                    <div class="food-menu-img">
-                        <img src="./img/food-menu2.jpg" alt="food image">
-                    </div>
-                    <div class="food-menu-content">
-                        <h2>food menu item 2</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, cupiditate.</p>
-                        <p class="food-price">price: &#8377 350.00/-</p>
-                    </div>
-                </div>
-
-                <div class="food-menu menu-right">
-                    <div class="food-menu-img">
-                        <img src="./img/food-menu3.jpg" alt="food image">
-                    </div>
-                    <div class="food-menu-content">
-                        <h2>food menu item 3</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, cupiditate.</p>
-                        <p class="food-price">price: &#8377 200.00/-</p>
-                    </div>
-                </div>
-
-                <div class="food-menu menu-left">
-                    <div class="food-menu-img">
-                        <img src="./img/food-menu4.jpg" alt="food image">
-                    </div>
-                    <div class="food-menu-content">
-                        <h2>food menu item 4</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, cupiditate.</p>
-                        <p class="food-price">price: &#8377 300.00/-</p>
-                    </div>
-                </div>
-                <div class="food-menu menu-right">
-                    <div class="food-menu-img">
-                        <img src="./img/food-menu5.jpg" alt="food image">
-                    </div>
-                    <div class="food-menu-content">
-                        <h2>food menu item 5</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, cupiditate.</p>
-                        <p class="food-price">price: &#8377 450.00/-</p>
-                    </div>
-                </div>
-
-                <div class="food-menu menu-left">
-                    <div class="food-menu-img">
-                        <img src="./img/food-menu6.jpg" alt="food image">
-                    </div>
-                    <div class="food-menu-content">
-                        <h2>food menu item 6</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, cupiditate.</p>
-                        <p class="food-price">price: &#8377 500.00/-</p>
-                    </div>
+                <div class="food-menu-content">
+                    <h2>food menu item 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, cupiditate.</p>
+                    <p class="food-price">price: &#8377 250.00/-</p>
                 </div>
             </div>
-        </section>
+
+            <div class="food-menu menu-left">
+                <div class="food-menu-img" id="pakwan-2">
+                    <img src="./img/food-menu2.jpg" alt="food image">
+                </div>
+                <div class="food-menu-content">
+                    <h2>food menu item 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, cupiditate.</p>
+                    <p class="food-price">price: &#8377 350.00/-</p>
+                </div>
+            </div>
+
+            <div class="food-menu menu-right">
+                <div class="food-menu-img" id="pakwan-3">
+                    <img src="./img/food-menu3.jpg" alt="food image">
+                </div>
+                <div class="food-menu-content">
+                    <h2>food menu item 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, cupiditate.</p>
+                    <p class="food-price">price: &#8377 200.00/-</p>
+                </div>
+            </div>
+
+            <div class="food-menu menu-left">
+                <div class="food-menu-img" id="pakwan-4">
+                    <img src="./img/food-menu4.jpg" alt="food image">
+                </div>
+                <div class="food-menu-content">
+                    <h2>food menu item 4</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, cupiditate.</p>
+                    <p class="food-price">price: &#8377 300.00/-</p>
+                </div>
+            </div>
+            <div class="food-menu menu-right">
+                <div class="food-menu-img" id="pakwan-5">
+                    <img src="./img/food-menu5.jpg" alt="food image">
+                </div>
+                <div class="food-menu-content">
+                    <h2>food menu item 5</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, cupiditate.</p>
+                    <p class="food-price">price: &#8377 450.00/-</p>
+                </div>
+            </div>
+
+            <div class="food-menu menu-left">
+                <div class="food-menu-img" id="pakwan-6">
+                    <img src="./img/food-menu6.jpg" alt="food image">
+                </div>
+                <div class="food-menu-content">
+                    <h2>food menu item 6</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, cupiditate.</p>
+                    <p class="food-price">price: &#8377 500.00/-</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- ######################### Testimonial section ################## -->
-     <section class="testimonial-area" id="testimonial">
-         <h2 class="testimonial-title">what our customers say</h2>
-         <div class="testimonial-container container">
-           <div class="testimonial-menu">
-               <div class="rating">
-                   <span><i class="fa fa-star checked"></i></span>
-                   <span><i class="fa fa-star checked"></i></span>
-                   <span><i class="fa fa-star checked"></i></span>
-                   <span><i class="fa fa-star checked"></i></span>
-                   <span><i class="fa fa-star checked"></i></span>
-               </div>
-               <p class="review">
-                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, aspernatur?Lorem ipsum dolor sit amet consectetur.
-               </p>
-               <div class="testimonial-photo">
-                   <div class="testimonial-img">
-                <img src="./img/male-photo1.jpg" alt="customer image "></div>
-                <p class="user-name">John dey</p>
-                <hr>
-               </div>
-           </div>
-           <div class="testimonial-menu">
-               <div class="rating">
-                   <span><i class="fa fa-star checked"></i></span>
-                   <span><i class="fa fa-star checked"></i></span>
-                   <span><i class="fa fa-star checked"></i></span>
-                   <span><i class="fa fa-star checked"></i></span>
-                   <span><i class="fa fa-star checked"></i></span>
-               </div>
-               <p class="review">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, aspernatur?Lorem ipsum dolor sit amet consectetur.
-               </p>
-               <div class="testimonial-photo">
-                <div class="testimonial-img">
-             <img src="./img/male-photo2.jpg" alt="customer image "></div>
-                <p class="user-name">Alex carry</p>
-                <hr>
-               </div>
-           </div>
-           <div class="testimonial-menu">
-               <div class="rating">
-                   <span><i class="fa fa-star checked"></i></span>
-                   <span><i class="fa fa-star checked"></i></span>
-                   <span><i class="fa fa-star checked"></i></span>
-                   <span><i class="fa fa-star checked"></i></span>
-                   <span><i class="fa fa-star checked"></i></span>
-               </div>
-               <p class="review">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, aspernatur?Lorem ipsum dolor sit amet consectetur.
-               </p>
-               <div class="testimonial-photo">
-                <div class="testimonial-img">
-             <img src="./img/male-photo3.jpg" alt="customer image "></div>
-                <p class="user-name">david joy</p>
-                <hr>
-               </div>
-           </div>
-         </div>
-
-     </section>
-
-  <!-- ################### contact section styling ################### -->
-   
-  <section class="contact-area" id="contact">
-    <div class="contact-menu-container container">
-        <div class="contact-photo">
-          <img src="./img/restraunt-image.jpg" alt="">
+    <section class="testimonial-area" id="testimonial">
+        <h2 class="testimonial-title">what our customers say</h2>
+        <div class="testimonial-container container">
+            <div class="testimonial-menu">
+                <div class="rating">
+                    <span><i class="fa fa-star checked"></i></span>
+                    <span><i class="fa fa-star checked"></i></span>
+                    <span><i class="fa fa-star checked"></i></span>
+                    <span><i class="fa fa-star checked"></i></span>
+                    <span><i class="fa fa-star checked"></i></span>
+                </div>
+                <p class="review">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, aspernatur?Lorem ipsum dolor sit
+                    amet consectetur.
+                </p>
+                <div class="testimonial-photo">
+                    <div class="testimonial-img">
+                        <img src="./img/male-photo1.jpg" alt="customer image "></div>
+                    <p class="user-name">John dey</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="testimonial-menu">
+                <div class="rating">
+                    <span><i class="fa fa-star checked"></i></span>
+                    <span><i class="fa fa-star checked"></i></span>
+                    <span><i class="fa fa-star checked"></i></span>
+                    <span><i class="fa fa-star checked"></i></span>
+                    <span><i class="fa fa-star checked"></i></span>
+                </div>
+                <p class="review">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, aspernatur?Lorem ipsum dolor sit
+                    amet consectetur.
+                </p>
+                <div class="testimonial-photo">
+                    <div class="testimonial-img">
+                        <img src="./img/male-photo2.jpg" alt="customer image "></div>
+                    <p class="user-name">Alex carry</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="testimonial-menu">
+                <div class="rating">
+                    <span><i class="fa fa-star checked"></i></span>
+                    <span><i class="fa fa-star checked"></i></span>
+                    <span><i class="fa fa-star checked"></i></span>
+                    <span><i class="fa fa-star checked"></i></span>
+                    <span><i class="fa fa-star checked"></i></span>
+                </div>
+                <p class="review">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, aspernatur?Lorem ipsum dolor sit
+                    amet consectetur.
+                </p>
+                <div class="testimonial-photo">
+                    <div class="testimonial-img">
+                        <img src="./img/male-photo3.jpg" alt="customer image "></div>
+                    <p class="user-name">david joy</p>
+                    <hr>
+                </div>
+            </div>
         </div>
-        <form class="contact-form">
+
+    </section>
+
+    <!-- ################### contact section styling ################### -->
+
+    <section class="contact-area" id="contact">
+        <div class="contact-menu-container container">
+            <div class="contact-photo">
+                <img src="./img/restraunt-image.jpg" alt="">
+            </div>
+            <form class="contact-form">
                 <h2 class="contact-form-title">contact us</h2>
                 <input type="text" name="" id="" placeholder="Name">
                 <input type="text" name="" id="" placeholder="Contact no." minlength="10" maxlength="10">
@@ -271,17 +264,88 @@ $(document).ready(function(){
                 <textarea name="" id="" cols="30" rows="2" placeholder="Type your message here..."></textarea>
                 <input type="submit" value="submit">
 
-        </form>
-    </div>
-  </section>
+            </form>
+        </div>
+    </section>
 
 
-<footer class="footer">
-    <h2 class="footer-content">food cafe restraunt &copy 2020, All right are reserved </h2>
-</footer>
-  
+    <footer class="footer">
+        <h2 class="footer-content">food cafe restraunt &copy 2020, All right are reserved </h2>
+    </footer>
 
- 
+
+    <script>
+        "use strict"
+     
+        $(window).ready(function () {
+
+            $(document).scroll(function () {
+
+                var position = $(document).scrollTop();
+                console.log(position);
+
+                if (position > 100) {
+
+                    $("#about-area-left").addClass("animate__animated animate__bounceInLeft");
+                    $("#about-area-right").addClass("animate__animated animate__bounceInRight");
+                }
+
+                if((position>1300) || (position>2500)) {
+                
+                    $("#pakwan-1").addClass("animate__animated animate__rotateIn");
+                    $("#pakwan-2").addClass("animate__animated animate__rotateIn");
+
+                }
+                if(position>1700) {
+                
+                    $("#pakwan-3").addClass("animate__animated animate__rotateIn");
+                    $("#pakwan-4").addClass("animate__animated animate__rotateIn");
+
+                }
+                if(position>2000) {
+                
+                    $("#pakwan-5").addClass("animate__animated animate__rotateIn");
+                    $("#pakwan-6").addClass("animate__animated animate__rotateIn");
+
+                }
+              
+
+            });
+
+        });
+
+    </script>
+
+
+
+    <script>
+        "use strict"
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
 
 </body>
+
 </html>
